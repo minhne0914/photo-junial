@@ -2,6 +2,7 @@
   "name": "photo-junial",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "dependencies": {
     "@capacitor/android": "^7.4.3",
     "@capacitor/camera": "^7.0.2",
@@ -9,17 +10,23 @@
     "@capacitor/core": "^7.4.3",
     "@capacitor/filesystem": "^7.1.4",
     "@capacitor/preferences": "^7.0.2",
+    "@capacitor/share": "^7.0.2",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-scripts": "5.0.1"
+    "react-dom": "^18.3.1"
   },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "serve": "vite preview",
+    "android": "cap run android",
+    "sync": "cap sync",
+    "copy": "cap copy"
   },
   "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
     "vite": "^7.1.7"
   }
-  
 }

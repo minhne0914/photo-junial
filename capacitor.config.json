@@ -1,5 +1,18 @@
 {
-  "appId": "com.example.app",
-  "appName": "photo junial",
-  "webDir": "dist"
+  "appId": "com.example.photojournal",
+  "appName": "Photo Journal",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https"
+  },
+  "plugins": {
+    "Camera": {
+      "cameraPermission": "Allow Photo Journal to access your camera to take photos.",
+      "photosPermission": "Allow Photo Journal to access your photo library to save photos."
+    },
+    "Filesystem": {
+      "iosIsDocumentPickerEnabled": true,
+      "iosShowPicker": true
+    }
+  }
 }
